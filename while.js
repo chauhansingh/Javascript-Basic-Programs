@@ -1,5 +1,4 @@
-var count = -3;
-
+let count = -3;
 while (count++); {
     console.log('hi');
 }
