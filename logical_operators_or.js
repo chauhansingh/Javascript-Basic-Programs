@@ -8,7 +8,7 @@ let o7 = 'cat' || false; //cat
 let o8 = 'cat' || true; //cat
 let o9 = true || 'cat'; //cat
 
-console.log(o1,o2,o3,o4,o5,o6,o7,o8,o9);
+console.log(o1, o2, o3, o4, o5, o6, o7, o8, o9);
 
 if (1 || 0) {
     console.log("Yes it's true");

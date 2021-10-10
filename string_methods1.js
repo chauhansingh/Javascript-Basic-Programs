@@ -1,31 +1,32 @@
-//match()
+//charAt(x)
+var myString = 'I can win';
+console.log(myString.charAt(7)); // i
+
+//charCodeAt(x)
+var myString = 'I can win';
+console.log(myString.charCodeAt(0)); //73
+
+//concat(v1,v2,...)
+var message = "Namaste"
+var final = message.concat(' "India" ', ' "Welcome to JS"');
+console.log(final); //Namaste "India" "Welcome to JS"
+
+//fromCharcode(c1,c2,...)
+console.log(String.fromCharCode(97, 98, 99, 120, 121, 122)) //abcxyz
+console.log(String.fromCharCode(72, 69, 76, 76, 79)) //HELLO
+
+//indexOf()
 var myString = 'Javascript rocks';
-console.log(myString.match(/roc/g)); //output [ 'roc' ]
+console.log(myString.indexOf('a')); //output :1
 
-//replace(substr, replacetext)
-var myString = "Felight Javascript Coders";
-console.log(myString.replace(/coders/i, "Developers")); //output : Felight Javascript Developers
+//lastIndexof()
+var myString = 'Javascript rocks';
+console.log(myString.lastIndexOf('r')); //output :11
 
-//search()
-var myString ="Welcome to Felight!";
-console.log(myString.search("Felight")); //output : 11
+//localeCompare()
+var myString = 'Javascript rocks';
+var myString1 = 'Javascript rocks';
+var x = myString.localeCompare(myString1);
+console.log(x); //output 0
 
-//slice()
-var text="excellent";
-console.log(text.slice(0,4)); //output : "exce"
-console.log(text.slice(2,4)); //output : "ce"
 
-//split()
-var message="welcome to Felight"
-var word=message.split("l");
-console.log(word[0]); // we
-console.log(word[1]); //come to Fe
-console.log(word[2]); //ight
-
-//substr(start,length)
-var str = "Hello Felight";
-console.log(str.substr(1, 4));  // ello
-
-//substring(start,end)
-var str = "Hello Felight";
-console.log(str.substring(1, 4)); //ell
