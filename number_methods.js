@@ -1,4 +1,4 @@
-let num=150;
+let num = 150;
 console.log(num.toExponential(3));
 console.log(num.toFixed(3));
 console.log(num.toLocaleString(5));

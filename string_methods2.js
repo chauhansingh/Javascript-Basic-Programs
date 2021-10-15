@@ -1,27 +1,31 @@
-//toLocaleLowerCase()
-var myString ='Felight Rocks';
-myString = myString.toLocaleLowerCase();
-console.log(myString); //felight rocks
+//match()
+var myString = 'Javascript rocks';
+console.log(myString.match(/roc/g)); //output [ 'roc' ]
 
-//toLowerCase()
-var myString ='Felight Rocks';
-myString = myString.toLowerCase();
-console.log(myString); //felight rocks
+//replace(substr, replacetext)
+var myString = "Felight Javascript Coders";
+console.log(myString.replace(/coders/i, "Developers")); //output : Felight Javascript Developers
 
-//toString()
-var x= "167";
-console.log(x.toString()); //167
+//search()
+var myString = "Welcome to Felight!";
+console.log(myString.search("Felight")); //output : 11
 
-//toLocaleUpperCase()
-var myString ='Felight Rocks';
-myString = myString.toLocaleUpperCase();
-console.log(myString); //FELIGHT ROCKS
+//slice()
+var text = "excellent";
+console.log(text.slice(0, 4)); //output : "exce"
+console.log(text.slice(2, 4)); //output : "ce"
 
-//toUpperCase()
-var myString ='Felight Rocks';
-myString = myString.toUpperCase();
-console.log(myString); //FELIGHT ROCKS
+//split()
+var message = "welcome to Felight"
+var word = message.split("l");
+console.log(word[0]); // we
+console.log(word[1]); //come to Fe
+console.log(word[2]); //ight
 
-//valueOf()
-var x= "Hello";
-console.log(x.valueOf()); //Hello
+//substr(start,length)
+var str = "Hello Felight";
+console.log(str.substr(1, 4));  // ello
+
+//substring(start,end)
+var str = "Hello Felight";
+console.log(str.substring(1, 4)); //ell

@@ -1,16 +1,23 @@
 <html>
-    <head>
-        <script>
-            function doSomething(){
-            console.log("Welcome to Javascript");
-            console.log("Bye");
-            document.getElementById('myHeader').innerHTML= 'Course';
-            }
-            
-        </script>
-    </head>
-    <body>
-        <h1 id='myHeader'>Welcome</h1>
-        <button onclick="doSomething()">Click Here</button>
-    </body>
+
+<head>
+    <script>
+        function doSomething() {
+            //console.log("Welcome to Javascript");
+            //console.log("Bye");
+            document.getElementById('myHeader').innerHTML = 'Welcome to javaScript';
+            document.getElementById('h3').innerHTML = 'Hello World Today is ' + Date();
+            setInterval(doSomething, 1000);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 id='myHeader' align="center">my webApp</h1>
+    <h3 id="h3" align="center">
+        <h3>
+            <button onclick="doSomething()">Click Here</button>
+</body>
+
 </html>
